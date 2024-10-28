@@ -1,11 +1,11 @@
--- Crear la tabla de temas
+
 CREATE TABLE temas (
     id INTEGER PRIMARY KEY AUTOINCREMENT,
     nombre TEXT NOT NULL UNIQUE,
     descripcion TEXT
 );
 
--- Crear la tabla de usuarios con restricción de unicidad en (id, tema_id)
+
 CREATE TABLE usuarios (
     id INTEGER PRIMARY KEY AUTOINCREMENT,
     nombre TEXT NOT NULL,
@@ -17,7 +17,7 @@ CREATE TABLE usuarios (
 );
 
 
--- Crear la tabla de mensajes
+
 CREATE TABLE articulos (
     id INTEGER PRIMARY KEY AUTOINCREMENT,
     usuarioId INTEGER NOT NULL,
